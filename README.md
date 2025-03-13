@@ -1,6 +1,8 @@
 # Plumsail
 
-## A task for candidates for full-stack developer (C#, JavaScript).
+> [Go to installation instructions](#installation)
+
+## A task for candidates for full-stack developer (C#, JavaScript)
 
 ### Prerequisites
 
@@ -32,7 +34,7 @@ The test task is quite basic but consider it as a real-life application. Thus, t
 
 Now, let's imagine the web forms support large attachments (~100MB). Describe in text how to handle storage and downloads from the submissions list, considering thousands of submissions with multiple attachments each. Include architecture, data structure, and REST API.
 
-Results Send results to recruitment@plumsail.com with the link to your HH resume.
+Results Send results to [recruitment@plumsail.com](mailto:recruitment@plumsail.com) with the link to your HH resume.
 
 ### Deadlines
 
