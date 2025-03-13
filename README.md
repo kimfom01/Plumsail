@@ -58,7 +58,12 @@ Contributors names and contact info
 
 ### Getting the Project
 
-- Clone the repository: `git clone https://github.com/kimfom01/Plumsail.git`
+- Clone the repository:
+
+  ```bash
+  git clone https://github.com/kimfom01/Plumsail.git
+  ```
+
 - Alternatively, download and extract the project ZIP file.
 
 ### Running the Application
