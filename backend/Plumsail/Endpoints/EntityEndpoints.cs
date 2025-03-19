@@ -16,11 +16,11 @@ public static class EntityEndpoints
 
     private static void MapPostEntity(RouteGroupBuilder group)
     {
-        group.MapPost("/",
-                async (Dictionary<string, string> data, IEntityService entityService,
+        group.MapPost("/{owner}",
+                async (string owner, Dictionary<string, string> data, IEntityService entityService,
                     CancellationToken cancellationToken) =>
                 {
-                    var entity = await entityService.AddEntity(data, cancellationToken);
+                    var entity = await entityService.AddEntity(owner, data, cancellationToken);
 
                     return Results.Created("", entity);
                 })
@@ -45,9 +45,9 @@ public static class EntityEndpoints
 
     private static void MapGetEntities(RouteGroupBuilder group)
     {
-        group.MapGet("/", (IEntityService entityService) =>
+        group.MapGet("/{owner}", (string owner, IEntityService entityService) =>
             {
-                var entities = entityService.GetEntities();
+                var entities = entityService.GetEntities(owner);
 
                 return Results.Ok(entities);
             })
